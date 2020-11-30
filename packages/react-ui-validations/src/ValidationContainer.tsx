@@ -20,7 +20,7 @@ export class ValidationContainer extends React.Component<ValidationContainerProp
   public static __KONTUR_REACT_UI__ = 'ValidationContainer';
 
   public static defaultProps = {
-    disableSmoothScroll: process.env.NODE_ENV === 'test'
+    disableSmoothScroll: process.env.BROWSER_ENV === 'test' || process.env.NODE_ENV === 'test',
   };
 
   public static propTypes = {
