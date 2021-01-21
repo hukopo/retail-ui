@@ -29,7 +29,6 @@ const styles = {
         `}
     `;
   },
-  
 
   captionColor(t: Theme) {
     return css`
