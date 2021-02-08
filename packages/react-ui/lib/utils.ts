@@ -61,8 +61,12 @@ export const isExternalLink = (link: string): boolean => {
 const KB = 1024;
 const UNITS = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
 
-export const formatBytes = (bytes: number, decimals: number = 2) => {
+export const formatBytes = (bytes: number, decimals: number = 2): string | null => {
   if (bytes === 0) return '0 Bytes';
+
+  if (!bytes) {
+    return null;
+  }
 
   decimals = decimals < 0 ? 0 : decimals;
 
