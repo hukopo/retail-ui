@@ -124,7 +124,7 @@ const styles = {
     `;
   },
 
-  content() {
+  tooltipContent() {
     return css`
       width: 210px;
     `;

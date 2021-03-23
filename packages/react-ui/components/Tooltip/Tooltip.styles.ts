@@ -21,7 +21,7 @@ const styles = {
     `;
   },
 
-  content() {
+  tooltipContent() {
     return css`
       padding: 15px 20px;
       position: relative;
