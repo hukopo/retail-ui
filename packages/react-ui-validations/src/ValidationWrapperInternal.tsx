@@ -144,7 +144,7 @@ export class ValidationWrapperInternal extends React.Component<
     ) : (
       <span />
     );
-    return this.props.errorMessage(<span>{clonedChild}</span>, !!validation, validation);
+    return this.props.errorMessage(clonedChild, !!validation, validation);
   }
 
   public getControlPosition(): Nullable<Point> {
